@@ -13,6 +13,10 @@ else
 	echo "Ha habido errores en la instalación de HomeBrew"
 fi
 
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/garajedeideas/.zprofile
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 brew install --cask notion
 brew install --cask google-chrome
 brew install --cask firefox
